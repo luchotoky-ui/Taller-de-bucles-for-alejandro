@@ -1,0 +1,26 @@
+
+
+//ejercicio numero 2---
+
+
+
+Scanner sc = new Scanner (System.in);
+      
+        int base;
+        int exponente;
+        int potencia= 1;
+        int factorial=1;
+  System.out.println("Ingresar base:");
+  base=sc.nextInt();
+  
+  System.out.println("Ingresar exponente:");
+  exponente=sc.nextInt();
+         
+   for (int i = 1; i <= exponente; i++){
+       potencia=potencia * base;
+   }
+   
+for(int i = 1; i <= exponente ;i++){
+    factorial=factorial * i;
+} System.out.println(" su  potencia :"+potencia);
+  System.out.println("su factorial :" +factorial);

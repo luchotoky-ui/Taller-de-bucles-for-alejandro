@@ -1,0 +1,41 @@
+
+
+//Ejercicio numero 3 ---
+
+
+
+
+Scanner entrada = new Scanner ( System.in);
+       
+     int N;
+     long primero = 0;
+     long segundo = 1;
+     long siguiente;
+     long suma= 0;
+     
+        System.out.print(" Ingresar la cantidad de terminos: ");
+        N = entrada.nextInt();
+        
+        if(N >=2){
+            for (int i= 1;i <= N; i++){
+                System.out.print(primero);
+                if (i < N){
+                    System.out.print(", ");
+                }
+                if (primero % 2 ==0){
+                    suma += primero;
+                }
+            siguiente= primero + segundo;
+            primero = segundo;
+            segundo = siguiente;
+            
+            }
+            
+            System.out.println();
+            
+            System.out.println(" la Suma de pares:"+ suma);
+        }else {
+            System.out.println("Ingresar numero mayor o igual a 2:");
+        }
+
+    }

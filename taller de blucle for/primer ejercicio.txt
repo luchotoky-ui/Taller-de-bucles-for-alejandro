@@ -1,0 +1,30 @@
+
+Eejercicio numero 1---:)
+
+Scanner entrada = new Scanner(System.in);
+     
+     System.out.println("Ingresar numero:");
+     int n = entrada.nextInt();
+     
+    int suma=0;
+    int conta=0;
+   
+    
+   for(int i=n; i >= 1; i--){
+    if(( i % 3 == 0 && i % 5 != 0)||
+      (i % 5 == 0 && i % 3 != 0)){
+        
+   System.out.println(i);
+   conta++;
+   suma=suma + i;
+    }
+    }
+   
+     System.out.println(" estos numeros cumplieron la condicion :"+ conta);
+       
+     if (conta > 0){
+     double promedio= (double) suma / conta;
+         System.out.println("Promedio :" +promedio);
+     }else{
+         System.out.println("No hay numero que cumpla la condicion :( ");
+     }
